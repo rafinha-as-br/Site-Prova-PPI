@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: grid;
+        grid-template-rows: min-content min-content min-content;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content max-content;
+        
+        background-color: black;
+        color: white;
+
+
+
+        .titulo{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            .pngLOGO{
+                img{
+                    width: 200px;
+                }
+            }
+
+            .textTitulo{
+                b{
+                    font-size: 70px;
+                }
+            }
+
+
+
+        }
+
+
+    }
+</style>
+<body>
+    <header>
+
+        <div class="titulo">
+            <div class="pngLOGO">
+                <img src="Assets/Rafinha Stúdios.png">
+            </div>
+            <div class="textTitulo">
+                <p><b>Notícias Mundiais</b></p>
+                <p>Terça-Feira, 5 de novembro</p>    
+            </div>
+        </div>
+        <div class="temasMenu">
+            <ul>
+                <li>Últimas Notícias</li>
+                <li>Esportes</li>
+                <li>Economia</li>
+                <li>Tempo</li>
+                <li>Episódios</li>
+            </ul>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
