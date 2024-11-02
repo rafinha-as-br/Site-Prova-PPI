@@ -4,89 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agropecuária Figueira</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    html{
-        height: 100%;
-    }
-    body{
-        display: grid;
-        grid-template-rows: 32%;
-        height: 100%;
-    }
-    header{
-        background-image: url(Assets/Agro\ figueira\ Background\ 1.png);
-        background-position: center;
-        color: white;
-        justify-content: center;
-        
-        display: flex;
-        flex-direction: column;
 
-        .parteCIMA{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-
-            .tituloHome{
-                text-align: center;
-                font-size: 25px;
-                b{
-                    font-size: 50px;
-                }
-            }
-
-        }
-
-        .parteBAIXO{
-            display: flex;
-            flex-direction: column;
-            .listaConteudos{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                gap: 30px;
-                font-size: 20px;
-                background-color: brown;
-            }
-
-        }
-
-
-
-
-
-    }
-
-</style>
 <body>
     <header>
         <div class="parteCIMA">
             <div class="logoPNG">
-                LOGO
+                <img src="Assets/Agro Figueira Logo.png">
             </div>
             <div class="tituloHome">
                 <p><b>Agropecuária Figueira</b></p>
                 <p>O melhor do agro para você</p>
             </div>
             <div class="contaPNG">
-                LOGIN
+                <img src="Assets/userLOGO.png">
+                <p>Entrar</p>
             </div>    
         </div>
 
         <div class="parteBAIXO">
             <ul class="listaConteudos">
-                <li>Rações</li>
-                <li>Medicamentos</li>
-                <li>Celaria</li>
-                <li>Roupas</li>
-                <li>Ferramentas</li>
+                <li><a>Rações</a></li>
+                <li><a>Medicamentos</a></li>
+                <li><a>Celaria</a></li>
+                <li><a>Roupas</a></li>
+                <li><a>Ferramentas</a></li>
             </ul>
         </div>
 
     </header>
-    <main></main>
+    <main>
+
+        <div class="promoContainer"></div>
+        <div class="medicamentosContainer"></div>
+        <div class="racoesContainer"></div>
+        <!-- 
+        
+
+        Promoções
+        Rações
+        Cliente especial
+        Medicamentos
+
+        -->
+        
+
+    </main>
     <footer></footer>
 </body>
 </html>

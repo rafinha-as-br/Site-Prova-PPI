@@ -1,0 +1,111 @@
+html{
+    height: 100%;
+}
+body{
+    display: grid;
+    grid-template-rows: 32%;
+    height: 100%;
+}
+
+
+
+
+header{
+    background-image: url(Assets/Agro\ figueira\ Background\ 1.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    justify-content: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .parteCIMA{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .logoPNG{
+            background-color: rgba(255, 227, 205, 25%);
+            border-radius: 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-left: 20px;
+
+            img{
+                width: 250px;
+            }
+        }
+
+
+        .tituloHome{
+            text-align: center;
+            font-size: 25px;
+            background-color: rgba(255, 227, 205, 25%);
+            border-radius: 30px;
+            padding-right: 10px;
+            padding-left: 10px;
+            color: black;
+
+            b{
+                font-size: 60px;
+            }
+        }
+
+        .contaPNG{
+
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+
+            margin-right: 20px;
+            padding: 10px;
+
+            background-color: rgba(255, 227, 205, 25%);
+            border-radius: 40px;
+
+
+            img{
+                width: 120px;
+            }
+            
+        }
+        
+
+    }
+
+    .parteBAIXO{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(93, 66, 44);
+
+        .listaConteudos{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            padding: 0px;
+            margin: 10px;
+            gap: 50px;
+            font-size: 30px;
+            list-style: none;
+        }
+
+    }
+
+
+
+
+}
