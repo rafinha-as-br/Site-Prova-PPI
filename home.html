@@ -18,14 +18,45 @@
         background-image: url(Assets/Agro\ figueira\ Background\ 1.png);
         background-position: center;
         color: white;
-
+        justify-content: center;
+        
         display: flex;
         flex-direction: column;
 
         .parteCIMA{
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .tituloHome{
+                text-align: center;
+                font-size: 25px;
+                b{
+                    font-size: 50px;
+                }
+            }
+
         }
+
+        .parteBAIXO{
+            display: flex;
+            flex-direction: column;
+            .listaConteudos{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 30px;
+                font-size: 20px;
+                background-color: brown;
+            }
+
+        }
+
+
+
+
+
     }
 
 </style>
@@ -45,7 +76,13 @@
         </div>
 
         <div class="parteBAIXO">
-
+            <ul class="listaConteudos">
+                <li>Rações</li>
+                <li>Medicamentos</li>
+                <li>Celaria</li>
+                <li>Roupas</li>
+                <li>Ferramentas</li>
+            </ul>
         </div>
 
     </header>
