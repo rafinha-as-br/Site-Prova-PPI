@@ -4,10 +4,11 @@ html{
 body{
     display: grid;
     grid-template-rows: 32% 100% 20%;
+    gap: 20px;
     height: 100%;
+    margin: 0%;
+
 }
-
-
 
 
 header{
@@ -25,7 +26,7 @@ Divido em 2 blocos:
     justify-content: space-between;
     color: white;
     
-    background-image: url(Assets/Agro\ figueira\ Background\ 1.png);
+    background-image: url(Assets/Header/Agro\ figueira\ Background\ 1.png);
     background-size: cover;
     background-position: center;
     
@@ -188,6 +189,7 @@ main{
     
     display: grid;
     grid-template-rows: min-content min-content min-content min-content;
+    gap: 20px;
 
     .promoContainer{
         display: flex;
@@ -195,10 +197,10 @@ main{
         justify-content: center;
         text-align: center;
 
-        border: 2px solid black;
-        gap: 8px;
 
-        background-color: rgba(255, 227, 205, 100%);
+        gap: 8px;
+        margin: 0px 15px 0px 15px;
+
         color: white;
 
 
@@ -230,12 +232,14 @@ main{
             display: flex;
             flex-direction: row;
             justify-content: center;
+
             gap: 7px;
             margin: 5px;
 
-
             border: 2px solid black;
             border-radius: 10px;
+
+            background-color: rgba(255, 227, 205, 100%);
 
 
             .promoITEM{
@@ -272,7 +276,8 @@ main{
                     }
                     
                     .valor{
-                        background-color: aqua;
+                        align-items: center;
+                        background-color: rgb(72, 52, 35);
                     }
 
                 }
@@ -283,6 +288,56 @@ main{
         }
 
     }
+
+    .racoesContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        border: 2px solid black;
+
+        gap: 8px;
+        margin: 0px 15px 0px 15px;
+
+        color: white;
+
+        .racoesTitulo{
+
+            background-color: rgb(93, 66, 44);
+
+            border: 2px solid black;
+            border-radius: 10px;
+
+            gap: 7px;
+            margin: 5px;
+
+            
+            font-size: 20px;
+            b{
+                font-size: 50px;
+            }
+            p{
+                margin: 0px;
+            }
+
+
+        }
+        
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
