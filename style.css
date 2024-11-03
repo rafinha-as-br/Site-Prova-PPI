@@ -3,7 +3,7 @@ html{
 }
 body{
     display: grid;
-    grid-template-rows: 32%;
+    grid-template-rows: 32% 50% 18%;
     height: 100%;
 }
 
@@ -11,34 +11,39 @@ body{
 
 
 header{
-    background-image: url(Assets/Agro\ figueira\ Background\ 1.png);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    justify-content: center;
+
+/* 
+Divido em 2 blocos: 
+- cima: Contém logo, título e login
+- Baixo: Contém Lista de págia da loja, campo de pesquisa
+
+*/
+
     
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: white;
+    
+    background-image: url(Assets/Agro\ figueira\ Background\ 1.png);
+    background-size: cover;
+    background-position: center;
+    
+
 
     .parteCIMA{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-        
-
-        margin-top: 20px;
-        margin-bottom: 20px;
+        align-items: center;    
 
         .logoPNG{
-            background-color: rgba(255, 227, 205, 25%);
-            border-radius: 40px;
-
             display: flex;
             align-items: center;
             justify-content: center;
+            height: 100%;
 
+            background-color: rgba(255, 227, 205, 25%);
             margin-left: 20px;
 
             img{
@@ -48,13 +53,19 @@ header{
 
 
         .tituloHome{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
             text-align: center;
             font-size: 25px;
+            color: black;
+
             background-color: rgba(255, 227, 205, 25%);
-            border-radius: 30px;
             padding-right: 10px;
             padding-left: 10px;
-            color: black;
+            height: 100%;
 
             b{
                 font-size: 60px;
@@ -62,20 +73,17 @@ header{
         }
 
         .contaPNG{
-
-
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
             font-size: 25px;
 
             margin-right: 20px;
             padding: 10px;
 
             background-color: rgba(255, 227, 205, 25%);
-            border-radius: 40px;
-
 
             img{
                 width: 120px;
@@ -86,26 +94,93 @@ header{
 
     }
 
+
+
+
     .parteBAIXO{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+
+        height: 70px;
+
         background-color: rgb(93, 66, 44);
+        
+        font-size: 30px;
+
 
         .listaConteudos{
             display: flex;
             flex-direction: row;
             justify-content: center;
-            text-align: center;
+            align-items: center;
+
             padding: 0px;
             margin: 10px;
+            margin-left: 50px;
             gap: 50px;
-            font-size: 30px;
+
+
             list-style: none;
+
         }
 
+        .pesquisaContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+
+            gap: 15px;
+            margin-right: 8%;
+
+            .inputContainer{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+
+                padding: 5px 12px 5px 12px;
+                gap: 15px;
+
+                border: 2px solid;
+                border-radius: 20px;
+                border-color: white;
+
+                input{
+                    background-color: rgb(93, 66, 44);
+                    
+                    padding: 8px;
+    
+                    border-style: none;
+    
+                }
+    
+                span{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 40px;
+                        color: white;
+                        margin-right: 4px;
+                    }
+                }
+               
+
+
+            }
+
+           
+
+        }
     }
 
+}
 
 
-
+main{
+    
 }
