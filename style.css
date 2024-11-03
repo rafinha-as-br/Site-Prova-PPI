@@ -167,14 +167,8 @@ Divido em 2 blocos:
                         color: white;
                         margin-right: 4px;
                     }
-                }
-               
-
-
+                } 
             }
-
-           
-
         }
     }
 
@@ -182,5 +176,47 @@ Divido em 2 blocos:
 
 
 main{
+
+    /* 
+        Contém:
+        - Promoções
+        - Rações
+        - Cliente especial
+        - Medicamentos
     
+    */
+    
+    display: grid;
+    grid-template-rows: min-content min-content min-content min-content;
+
+    .promoContainer{
+        display: flex;
+        flex-direction: column;
+
+        .promoTitulo{
+            display: flex;
+            flex-direction: column;
+            
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+
+            font-size: 20px;
+            b{
+                font-size: 50px;
+            }
+            p{
+                margin: 0px;
+            }
+        }
+
+        .promoConteudo{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+    }
+
+
 }
