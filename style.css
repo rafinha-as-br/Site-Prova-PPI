@@ -414,71 +414,77 @@ main{
 
         }
 
-        .produtosConteudo{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-
-            gap: 7px;
+        .produtoMain{
+            background-color: rgba(255, 227, 205, 100%);
             margin: 5px;
 
             border: 2px solid black;
             border-radius: 10px;
 
-            background-color: rgba(255, 227, 205, 100%);
-
-            .produtoItem{
+            .produtosConteudo{
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 justify-content: center;
-                text-align: center;
+    
+                gap: 7px;
+    
 
-                border: 2px solid black;
-                border-radius: 15px;
-
-                background-color: white;
-
-                padding: 5px;
-                margin: 5px;
-
-                font-size: 20px;
-
-                img{
-                    width: 250px;
-                }
-
-
-                span{
-                    background-color: rgb(93, 66, 44);
+    
+    
+                .produtoItem{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                     text-align: center;
+    
                     border: 2px solid black;
                     border-radius: 15px;
-
-
-                    b{
-                        font-size: 23px;
-
+    
+                    background-color: white;
+    
+                    padding: 5px;
+                    margin: 5px;
+    
+                    font-size: 20px;
+    
+                    img{
+                        width: 250px;
                     }
-                    
-                    .valor{
-                        align-items: center;
-                        background-color: rgb(72, 52, 35);
+    
+    
+                    span{
+                        background-color: rgb(93, 66, 44);
+                        text-align: center;
+                        border: 2px solid black;
+                        border-radius: 15px;
+    
+    
+                        b{
+                            font-size: 23px;
+    
+                        }
+                        
+                        .valor{
+                            align-items: center;
+                            background-color: rgb(72, 52, 35);
+                        }
                     }
                 }
+    
             }
-
-        }
-
-        .produtoSaibaMais{
-            button{
-                width: 400px;
-                height: 50px;
-                border: 2px black solid;
-                background-color: rgb(93, 66, 44);
-                margin: 7px;
-                color: white;
-                font-size: 25px;
+    
+            .produtoSaibaMais{
+                button{
+                    width: 400px;
+                    height: 70px;
+                    border: 2px black solid;
+                    background-color: rgb(93, 66, 44);
+                    margin: 7px;
+                    color: white;
+                    font-size: 25px;
+                }
             }
+    
         }
 
     }
