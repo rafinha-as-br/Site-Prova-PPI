@@ -417,6 +417,7 @@ main{
 
         color: white;
 
+
         .produtosTitulo{
             
             background-color: rgb(93, 66, 44);
@@ -470,7 +471,7 @@ main{
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-    
+                
                 gap: 7px;
     
                 a{
@@ -542,6 +543,12 @@ main{
                     margin: 7px;
                     color: white;
                     font-size: 25px;
+                }
+
+                p{
+                    font-size: 45px;
+                    color: black;
+
                 }
             }
     
