@@ -1,11 +1,13 @@
 html{
     height: 100%;
+
 }
-body{
+body{  
     display: grid;
-    grid-template-rows: 32% 300% 20%;
+    grid-template-rows: auto auto 20%;
     gap: 20px;
-    height: 100%;
+    height: auto;
+    width: auto;   
     margin: 0%;
 
 }
@@ -37,15 +39,14 @@ Divido em 2 blocos:
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: rgba(255, 227, 205, 25%);
+        background-color: rgba(255, 227, 205, 30%);
         height: 100%;
 
         .logoPNG{
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100%;
-
+            
             background-color: rgba(255, 227, 205, 25%);
             margin-left: 2%;
 
@@ -64,16 +65,22 @@ Divido em 2 blocos:
             align-items: center;
 
             text-align: center;
-            font-size: 25px;
-            color: white;
+            font-size: 35px;
+            color: white; 
 
             padding-right: 10px;
             padding-left: 10px;
             height: 100%;
+            gap: 10px;
 
-            b{
-                font-size: 60px;
+            p{
+                margin: 0%;
+                b{
+                    font-size: 70px;
+    
+                }
             }
+
         }
 
 
@@ -334,7 +341,7 @@ main{
 
                 
                 .agro{
-                    color: rgb(93, 66, 44);
+                    color: yellow;
                     background-color: rgba(93, 66, 44, 50%);
                     border-radius: 4px;
                 }
@@ -355,8 +362,8 @@ main{
                 text-align: center;
                 font-size: 50px;
                 .agro{
-                    color: rgb(93, 66, 44);
-                    background-color: rgba(93, 66, 44, 30%);
+                    color: yellow;
+                    background-color: rgba(93, 66, 44, 50%);
                     border-radius: 4px;
                 }
             }
@@ -373,6 +380,27 @@ main{
                 font-size: 30px;
             }
 
+        }
+
+    }
+
+    /* Container de título das páginas */
+    .tituloPagina{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        font-size: 30px;
+
+
+        background-color: rgba(255, 227, 205, 100%);
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+
+        b{
+            font-size: 70px;
         }
 
     }
@@ -414,6 +442,24 @@ main{
 
         }
 
+        .produtosSubTitulo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            font-size: 50px;
+            color: black;
+            
+
+            span{
+                border: 4px solid black;
+                width: 540px;
+            }
+
+            
+        }
+
         .produtoMain{
             background-color: rgba(255, 227, 205, 100%);
             margin: 5px;
@@ -424,7 +470,7 @@ main{
             .produtosConteudo{
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
+                flex-wrap: wrap;
     
                 gap: 7px;
     
@@ -489,6 +535,7 @@ main{
 
     }
 
+    /* Container de produtos 2 */
 
 
 }
