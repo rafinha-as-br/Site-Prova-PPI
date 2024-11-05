@@ -22,7 +22,6 @@ Divido em 2 blocos:
 
 */
 
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -474,6 +473,11 @@ main{
     
                 gap: 7px;
     
+                a{
+                    text-decoration: none;
+                    text-transform: none;
+                    color: inherit;
+                }
 
     
     
@@ -482,6 +486,7 @@ main{
                     flex-direction: column;
                     justify-content: center;
                     text-align: center;
+                    align-items: center;
     
                     border: 2px solid black;
                     border-radius: 15px;
@@ -494,20 +499,29 @@ main{
                     font-size: 20px;
     
                     img{
-                        width: 250px;
+                        width: 270px;
+                        height: 300px;
                     }
     
-    
+                    a{
+                        text-decoration: none;
+                        text-transform: none;
+                        color: inherit;
+                    }
+                    a:visited{
+                        text-decoration: none;
+                        color: inherit;
+                    }
+
                     span{
                         background-color: rgb(93, 66, 44);
                         text-align: center;
                         border: 2px solid black;
                         border-radius: 15px;
-    
-    
+                        width: 100%;
+                        
                         b{
                             font-size: 23px;
-    
                         }
                         
                         .valor{
@@ -536,6 +550,33 @@ main{
     }
 
     /* Container de produtos 2 */
+    .produtosContainer2{
+        display: flex;
+        flex-direction: row;
 
+
+        .produtoIMG{
+            img{
+                width: 400px;
+            }
+        }
+
+        .produtoConteudo{
+            .titulo{
+                b{
+                    font-size: 50px;
+                }
+
+            }
+
+            
+            .textoProduto{
+                p{
+                    font-size: 30px;
+                }
+            }
+
+        }
+    }
 
 }
